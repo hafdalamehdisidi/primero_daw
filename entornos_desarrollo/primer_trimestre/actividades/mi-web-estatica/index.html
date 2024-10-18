@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Estructura Web Básica con Logo y JS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <img src="https://cdn.pixabay.com/photo/2013/04/01/09/18/document-98478_960_720.png" alt="Logo" class="logo">
+        <h1>Mi Página Web</h1>
+    </header>
+
+    <div class="container">
+        <!-- Menú Izquierdo -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contenido Principal -->
+        <main class="main-content">
+            <h2>Bienvenido a Nuestra Web</h2>
+            <p>
+                Esta es una estructura básica de una página web con una cabecera, un menú lateral y una sección principal de contenido.
+            </p>
+            <p>
+                Puedes modificar este contenido y adaptarlo según las necesidades de tu proyecto o para aprender sobre HTML y CSS.
+            </p>
+
+            <!-- Botón para mostrar/ocultar información -->
+            <button id="toggleButton">Mostrar más información</button>
+            <div id="extraInfo" style="display: none;">
+                <h3>Pasos para ver el Network en las herramientas de desarrollo</h3>
+                <ol>
+                    <li><strong>Abre las Herramientas de Desarrollo:</strong>
+                        <ul>
+                            <li>Haz clic derecho en cualquier lugar de la página y selecciona "Inspeccionar" o presiona la tecla <strong>F12</strong>.</li>
+                            <li>También puedes ir al menú de tres puntos en la esquina superior derecha del navegador, luego a <strong>Más herramientas</strong> > <strong>Herramientas para desarrolladores</strong>.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Ve a la pestaña "Network":</strong>
+                        <ul>
+                            <li>En la ventana de las herramientas de desarrollo, haz clic en la pestaña <strong>Network</strong> (Red).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Recarga la página:</strong>
+                        <ul>
+                            <li>Presiona la tecla <strong>F5</strong> o haz clic en el botón de recargar del navegador para ver todas las solicitudes HTTP desde el inicio.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Selecciona una solicitud HTTP:</strong>
+                        <ul>
+                            <li>Haz clic en una de las solicitudes que aparecen en la pestaña Network. Esto abrirá un panel con detalles.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Ver los encabezados HTTP:</strong>
+                        <ul>
+                            <li>En el panel de detalles de la solicitud seleccionada, haz clic en la subpestaña <strong>Headers</strong> (Encabezados) para ver los encabezados de la solicitud y la respuesta.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </main>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script JS para mostrar/ocultar información -->
+    <script src="script.js"></script>
+</body>
+</html>

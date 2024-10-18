@@ -1,0 +1,104 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos para la cabecera */
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    position: relative;
+}
+
+header .logo {
+    width: 50px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+/* Estructura principal */
+.container {
+    display: flex;
+    min-height: 80vh; /* Para llenar el espacio visible del navegador */
+}
+
+/* Estilos para el menú lateral izquierdo */
+.sidebar {
+    width: 20%;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.sidebar ul li a:hover {
+    color: #4a90e2;
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.main-content h2 {
+    color: #333;
+}
+
+.main-content p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #357ab7;
+}
+
+/* Pie de página */
+footer {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
