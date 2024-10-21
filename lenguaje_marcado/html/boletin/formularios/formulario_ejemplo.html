@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ejemplo de formulario</title>
+</head>
+<body>
+    <h1>Formulario con tabla</h1>
+    <form action="#">
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td rowspan="2">
+                        <ol>
+                            <li>Escriba su nombre
+                                <ul>
+                                    <li>Nombre</li>
+                                    <li>Comentarios</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input type="submit" value="Pulse aquí"/>
+                            </li>
+                        </ol>
+                    </td>
+                    <td>
+                        <label for="name">Nombre</label>
+                        <input type="text" name="fname" id="name"value="Escriba aquí su nombre"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="comments">Comentarios</label>
+                        <textarea name="comentarios" id="comments" rows="1" cols="24">Escriba aquí su comentario</textarea>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </form>
+</body>
+</html>
